@@ -35,7 +35,7 @@ jobs:
           npm install
       - name: '运行 【京喜每日签到】'
         run: |
-          cd /Task
+          cd ./Task
           node jingxi.js
         env:
           JD_COOKIE: ${{ secrets.JD_COOKIE }}
