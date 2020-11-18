@@ -1,10 +1,14 @@
 name: xmly
 
 on:
+  workflow_dispatch:
   schedule:
     - cron: '*/30 * * * * '
   watch:
     types: [started]
+  repository_dispatch:
+    types: xmly_speed
+  
 jobs:
   build:
     runs-on: ubuntu-latest
