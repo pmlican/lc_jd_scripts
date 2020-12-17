@@ -38,7 +38,7 @@ jobs:
           npm install
       - name: '运行 【京东工厂】'
         run: |
-          node Scripts/JD/jd_factory.js
+          node jd_jdfactory.js
         env:
           JD_COOKIE: ${{ secrets.JD_COOKIE }}
           JD_DEBUG: ${{ secrets.JD_DEBUG }}
